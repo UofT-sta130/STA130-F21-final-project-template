@@ -1,4 +1,0 @@
-"0","```r
-horror_movies_spain <- horror_movies_month %>% filter(release_country == \"Spain\")
-glimpse(horror_movies_spain)
-```"

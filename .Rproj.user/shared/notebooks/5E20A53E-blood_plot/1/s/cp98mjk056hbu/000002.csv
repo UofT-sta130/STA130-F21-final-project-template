@@ -1,7 +1,0 @@
-"0","```r
-#install.packages(\"ggplot2\")
-library(tidyverse)
-glimpse(horror_movies)
-#view(horror_movies)
-#?help(mpg)
-```"

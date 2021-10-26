@@ -1,7 +1,0 @@
-"0","```r
-ggplot(horror_temp, aes(x=review_rating, y=budget_nm)) +
-  geom_point() +
-  ggtitle(\"Tidy Tuesday Horror Movie Ratings vs Budget\") +
-  ylab(\"Budget\") +
-  xlab(\"Movie Rating\")
-```"

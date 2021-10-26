@@ -1,3 +1,0 @@
-"0","```r
-ggplot(horror_temp, aes(x=review_rating, y=budget_nm)) 
-```"
