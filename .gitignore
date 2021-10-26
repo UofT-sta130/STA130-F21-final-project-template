@@ -3,8 +3,6 @@
 .RData
 .Ruserdata
 
-*.docx
-*/
-*.zip
+*
 
 !.gitignore
