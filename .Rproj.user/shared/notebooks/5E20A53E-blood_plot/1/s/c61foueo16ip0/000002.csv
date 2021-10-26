@@ -1,0 +1,24 @@
+"0","```r
+horror_movies <- horror_movies %>% 
+  filter(!is.na(release_date)) %>% 
+  mutate(month = month(dmy(release_date), label=T, abbr=F)) %>% 
+  # Remove if month is unknown
+  filter(!is.na(month))
+#movies released per country
+total_country = horror_movies %>% 
+  count(release_country, name=\"total_country\")
+# create the data frame for release month vs country
+horror_movies_month = horror_movies %>% 
+  count(release_country, month) %>% 
+  #From help(left_join): The mutating joins add columns from y to x, matching rows based on the keys. Merge totals  by adding columns from y to x per month and country;
+  left_join(total_country) %>%
+  
+  # Filter: take only countries with more than 5 movie releases into account
+  filter(total_country >= 5) %>% 
+  mutate(percentage = n / total_country) 
+  
+  #Let's see what we have created
+  view(horror_movies_month)
+  
+ggplot(data=horror_movies_month, aes(x=month, y=percentage, fill=reorder(month, total_country, sum))) + geom_boxplot()
+```"

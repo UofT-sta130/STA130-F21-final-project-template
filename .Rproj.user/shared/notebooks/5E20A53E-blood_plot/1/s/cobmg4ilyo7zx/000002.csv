@@ -1,0 +1,28 @@
+"0","```r
+library(tidyverse)
+library(scales)
+library(lubridate)
+movies <-horror_movies  %>%  mutate(release_parsed = parse_date(release_date,
+                                     format = \"%d-%b-%y\") )
+#if the movies release parsed is na then take the movies release date  already expressed as years
+#Otherwise take the release date_date which is in years
+movies <- movies %>% mutate(years=ifelse(is.na(release_parsed),
+                             release_date,
+                              year(release_parsed))) %>% 
+  mutate(movies,month = month.abb[month(movies$release_parsed)]) %>%
+  mutate(budget_m= as.numeric(gsub(\"[[:punct:]]\",\"\",budget))) 
+budget_MU <- substr(movies$budget,1,1)
+movies_h<- movies[which(budget_unit==\"$\"),]
+movies_h %>% 
+  group_by(month, movie_rating) %>% 
+  summarize(revenue=sum(budget_m)) %>% 
+  ggplot(aes(month, revenue)) + 
+  geom_col(aes(fill=movie_rating)) + 
+  scale_y_continuous(labels=dollar_format()) + 
+  
+  scale_fill_manual(\"legend\", values = c(\"E\" = \"yellow\", \"NOT RATED\" = \"orange\", 
+                                         \"PG\" = \"black\", \"PG-13\"=\"brown\",\"R\"=\"gold\", 
+                                         \"TV-14\"=\"gray\", \"TV-MA\"=\"red\", \"UNRATED\"=\"Wheat\",
+                                         \"NA=pink1\")) +
+  labs(x=\"\", y=\"movie budget\", title=\"Worldwide Film Budget by month\")
+```"

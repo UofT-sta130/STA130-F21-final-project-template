@@ -1,0 +1,4 @@
+"0","```r
+#Hint we may want to change the units of this variable.   
+#movies_h<- movies[which(budget_MU==\"$\"),]
+```"

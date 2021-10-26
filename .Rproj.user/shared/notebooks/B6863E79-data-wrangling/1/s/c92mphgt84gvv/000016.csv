@@ -1,0 +1,7 @@
+"0","# this is a copy in Liza's drive due to dates being formatted in more than one way in original doc (just birth year)
+author_index <- googlesheets4::read_sheet(""https://docs.google.com/spreadsheets/d/1degAmrldvjhnZm6l8nki4vT2LZqz13-TDfwjAWR_9GY/edit#gid=0"")
+"
+"2","Reading from ""Copy of BMDS Author Index ""
+"
+"2","Range ""Sheet1""
+"

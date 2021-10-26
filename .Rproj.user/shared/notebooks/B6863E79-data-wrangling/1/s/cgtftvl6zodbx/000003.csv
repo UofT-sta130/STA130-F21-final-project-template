@@ -1,0 +1,12 @@
+"0","story_text_clean <- story_text %>% 
+  pivot_longer(everything(), values_to = ""text"") %>% 
+  select(-name) %>% 
+  mutate(story_code = story_text_list$story_code, 
+         what_is_the_reveal_border_sentence = story_text_list$what_is_the_reveal_border_sentence) %>% 
+  mutate(text_length = str_count(text)+1)
+"
+"2","Error: Problem with `mutate()` column `story_code`.
+[34mℹ[39m `story_code = story_text_list$story_code`.
+[34mℹ[39m `story_code` must be size 127 or 1, not 117.
+[90mRun `rlang::last_error()` to see where the error occurred.[39m
+"

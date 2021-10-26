@@ -1,0 +1,7 @@
+"0","```r
+ggplot(hmtemp, aes(x=review_rating, y=budget_nm))+
+  geom_point() + 
+  geom_point(data = filter(hmtemp, review_rating > 5, budget_nm > 1.0e+08), colour = \"red\", size = 2.2) + ggtitle(\"Tidy Tuesday Horror Movie Ratings vs Budget\") +
+  ylab(\"Budget\") +
+  xlab(\"Movie Rating\")
+```"

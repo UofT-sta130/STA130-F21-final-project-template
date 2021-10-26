@@ -1,0 +1,9 @@
+"0","```r
+#check the budget on the log scale
+ggplot(horror_temp, aes(x=review_rating, y=log_budget_nm)) +
+  geom_point() +
+  geom_smooth(method='lm',formula=y~x) +
+  ggtitle(\"Tidy Tuesday Horror Movie Ratings vs Budget\") +
+  ylab(\"log(Budget)\") +
+  xlab(\"Movie Rating\")
+```"
