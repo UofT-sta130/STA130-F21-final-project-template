@@ -34,7 +34,7 @@ This document shows a few basics on making slides with R markdown.
 
 To produce the slides, Knit to PDF (Beamer).
 
-The examples are shown with the `cars` dataset, which is NOT your project dataset.
+The examples shown were made with the `cars` dataset, which is NOT your project dataset.
 
 ---
 
