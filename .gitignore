@@ -13,4 +13,5 @@
 !project-template.pdf
 !detective_data.csv
 !/images/*
-
+!images
+!images/*
