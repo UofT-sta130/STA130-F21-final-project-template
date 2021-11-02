@@ -9,6 +9,6 @@
 
 !*.Rproj
 
-!project.template.Rmd
-!project.template.pdf
+!project-template.Rmd
+!project-template.pdf
 !detective_data.csv
