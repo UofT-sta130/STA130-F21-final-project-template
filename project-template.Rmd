@@ -1,6 +1,6 @@
 ---
 title: "Your Project Title (be descriptive and creative!)"
-author: "Student name(s) and team name (exactly as it appears on Quercus, if applicable)"
+author: "Student name(s) and group name (exactly as it appears on Quercus, if applicable)"
 subtitle: "You can either put a subtitle here, or delete this line"
 date: December 7, 2021
 output: 
@@ -143,7 +143,7 @@ Here you can also mention any additional considerations, concerns, or issues you
 
 ## References and Acknowledgements (optional)
 
-If you received any help from someone other than your team members you can acknowledge them. For example:   
+If you received any help from someone other than your group members you can acknowledge them. For example:   
 *The authors would like to thank "TA name" for their helpful suggestions and comments that improved the presentation of this poster.*
 
 
