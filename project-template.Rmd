@@ -2,7 +2,7 @@
 title: "Your Project Title (be descriptive and creative!)"
 author: "Student name(s) and group name (exactly as it appears on Quercus, if applicable)"
 subtitle: "You can either put a subtitle here, or delete this line"
-date: December 7, 2021
+date: December 3, 2021
 output: 
   beamer_presentation:
     theme: "Pittsburgh"
